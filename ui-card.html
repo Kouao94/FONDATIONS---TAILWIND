@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>UI CARD</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div
+        class="max-w-sm mx-auto my-10 p-6 space-y-4 rounded-2xl shadow-lg shadow-gray-500/20 bg-white border-t-2 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-out">
+
+        <!-- IMAGE + ICONES + BADGE -->
+        <div class="relative  overflow-hidden rounded-2xl ">
+
+          <!-- Badge "Best Seller" -->
+          <div class="absolute top-3 left-3  bg-white px-3 py-1 rounded-full text-xs font-medium shadow-sm">
+            <span>Best Seller</span>
+          </div>
+
+          <!-- Icône cœur (wishlist) -->
+          <button
+            class="absolute w-6 h-6 top-3 right-3 bg-red-400 rounded-full shadow-sm flex items-center justify-center hover:bg-red-500 transition">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+
+          <!-- Image produit -->
+          <div class="">
+            <img src="/images/nike.jpg" alt="Nike"
+              class=" h-72 w-full object-cover object-center group-hover:scale-105 transition-all duration-500 ease-out">
+          </div>
+
+          <!-- Petits indicateurs -->
+          <div class=" absolute bottom-3 left-1/2 flex gap-2 -translate-x-1/2 items-center">
+            <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+          </div>
+
+
+        </div>
+
+
+        <!-- TEXTE + PRIX -->
+        <div class="space-y-1">
+
+          <p class="text-sm md:text-lg  text-green-600 font-medium">Nike</p>
+
+          <h3 class="text-lg font-semibold text-gray-900">
+            Sneakers Nike couleur premium
+          </h3>
+
+          <p class="text-md md:text-lg text-gray-800 tracking-wide font-bold">3.000 frs</p>
+
+        </div>
+
+
+        <!-- CTA principal -->
+        <button
+          class="w-full bg-gray-800 text-white py-2 rounded-xl tracking-wider font-semibold group-hover:bg-gray-900 group-hover:-translate-y-1 group-hover:scale-[1.02] group-hover:font-bold transition-all duration-500 ease-out">
+          Commander
+        </button>
+
+      </div>
+
+
+    </section>
+  </main>
+</body>
+
+</html>

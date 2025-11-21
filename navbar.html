@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>NAV BAR ET HAMBURGUER MENU</title>
+</head>
+<header class="bg-white sticky top-0 z-50 shadow-md">
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!--Logo-->
+    <a href="#"><img src="images/logoJohn.png" alt="Logo" class="h-12"></a>
+    <!--Desktop Menu-->
+    <ul class="hidden md:flex gap-6 font-semibold tracking-widest text-gray-600">
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Services</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+    </ul>
+    <!--Hamburguer Bouton-->
+    <button id="menu-btn" class="md:hidden focus:outline-none flex items-center justify-center"
+      data-toggle="menu-mobile">
+      <ion-icon name="menu-outline" class="text-white h-12 w-12 bg-black rounded-md "></ion-icon>
+    </button>
+  </nav>
+  <!--Mobile Menu-->
+  <div id="menu-mobile" class="hidden md:hidden bg-white ">
+    <ul class="flex flex-col p-4 gap-6 font-semibold tracking-widest text-gray-600">
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Services</a></li>
+      <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const toggles = document.querySelectorAll("[data-toggle]");
+
+    toggles.forEach(btn => {
+      const menuId = btn.getAttribute("data-toggle");
+      const menu = document.getElementById(menuId);
+      const icon = btn.querySelector("ion-icon");  // récupère l'icône dans le bouton
+
+      btn.addEventListener("click", () => {
+        // Toggle du menu
+        menu.classList.toggle("hidden");
+
+        // Toggle de l'icône
+        if (menu.classList.contains("hidden")) {
+          icon.setAttribute("name", "menu-outline");   // menu fermé
+        } else {
+          icon.setAttribute("name", "close-outline");  // menu ouvert
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
