@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>FORM-CHECK-RAD-SEL</title>
+</head>
+
+<body>
+  <main>
+    <div
+      class="max-w-md mx-auto my-10 bg-blue-300 p-4 flex flex-col items-center justify-center space-y-4 border rounded-xl">
+      <h2 class="text-lg font-semibold underline ">Préférences</h2>
+      <form action="" class="space-y-6">
+        <div class="space-y-2">
+          <label class="flex items-center gap-2">
+            <input type="checkbox"> <span>S'abonner à la newsletter</span>
+          </label>
+
+          <label class="flex items-center gap-2">
+            <input type="checkbox"> <span>Recevoir les notifications sms</span>
+          </label>
+
+        </div>
+        <div class=" flex flex-col items-center justify-center ">
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Etes-vous d'accord ?</h2>
+            <label class="flex items-center gap-2">
+              <input type="radio" name="choix">
+              <span>OUI</span>
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="radio" name="choix">
+              <span>NON</span>
+            </label>
+          </div>
+        </div>
+        <div class="space-x-1 p-2 ">
+          <label for="paiement" class="text-md font-semibold">Mode de paiement :</label>
+          <select id="paiement" class="p-2 text-sm rounded-md">
+            <option value="">Sélectionnez</option>
+            <option value="Orange Money">Orange Money</option>
+            <option value="MTN Money">MTN Money</option>
+          </select>
+        </div>
+
+
+        <button
+          class="px-4 py-2 bg-gray-800 text-white font-bold hover:-translate-y-1 hover:bg-gray-950 transition duration-300 shadow-md hover:shadow-lg rounded-lg w-full mx-auto focus:outline-none focus:ring-2 focus:ring-gray-900 ">Valider</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>

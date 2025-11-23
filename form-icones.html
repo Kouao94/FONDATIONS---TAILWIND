@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>FORMULAIRE - ICONES</title>
+</head>
+
+<body>
+  <main class=" max-w-xs md:max-w-lg mx-auto flex flex-col items-center mt-10 shadow-lg rounded-xl bg-white p-6">
+    <h3 class="text-xl text-gray-700 tracking-wider border-2 border-gray-300 px-4 py-2">Veuillez renseigner ce
+      formulaire</h3>
+    <!--Formulaire d'insciption-->
+    <form class="space-y-5 my-2 p-6">
+
+      <div class="space-y-1">
+        <label for="nom" class="text-sm font-medium text-gray-700">
+
+          Nom complet:
+        </label>
+        <div class="relative">
+          <span class="absolute top-3 left-3 text-gray-700"><ion-icon name="person-circle-outline"></ion-icon></span>
+          <input type="text" id="nom" placeholder="nom-complet"
+            class="w-full pl-10 pr-5 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-300 transition">
+        </div>
+      </div>
+      <div class="space-y-1">
+        <label for="mail" class="text-sm font-medium text-gray-700">
+          Email:
+        </label>
+        <div class="relative">
+          <span class="absolute top-3 left-3 text-gray-700"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" id="mail" placeholder="@email.com"
+            class="w-full pl-10 pr-5 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-300 transition">
+        </div>
+      </div>
+      <div class="space-y-1">
+        <label for="password" class="text-sm font-medium text-gray-700">
+          Mot de passe:
+        </label>
+        <div class="relative">
+          <span class="absolute top-3 left-3 text-gray-700"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" id="password" placeholder="mot de passe"
+            class="w-full pl-10 pr-5 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-300 transition">
+        </div>
+      </div>
+      <div class="space-y-1">
+        <label for="confirmation" class="text-sm font-medium text-gray-700">
+          Confirmation du mot de passe:
+        </label>
+        <div class="relative">
+          <span class="absolute top-3 left-3 text-gray-700"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+          <input type="password" id="confirmation" placeholder="confirmez"
+            class="w-full pl-10 pr-5 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-300 transition">
+        </div>
+      </div>
+      <button type="submit"
+        class="w-full bg-blue-600 text-white font-bold tracking-wider text-md px-2 py-4 focus:outline-none focus:ring-2 focus:ring-gray-500  rounded-lg hover:bg-blue-800 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300">VALIDER</button>
+    </form>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>
