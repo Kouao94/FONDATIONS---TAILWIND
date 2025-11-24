@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>FORMULAIRE - COMPLET</title>
+</head>
+
+<body class="bg-gray-100">
+  <main>
+    <div class="max-w-md mx-auto my-4 bg-white shadow-lg px-10 py-5 rounded-md">
+      <h2 class="text-center text-2xl my-6 text-gray-800 tracking-wider">Formulaire d'inscription</h2>
+
+      <form class="space-y-6">
+
+        <!-- ========================= -->
+        <!-- 1. Nom / Email / Password -->
+        <!-- ========================= -->
+        <div class="space-y-4">
+
+          <!-- Nom complet -->
+          <div class="space-y-1">
+            <label for="nom-complet" class="text-sm font-medium">Nom complet :</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-3 flex items-center text-gray-600">
+                <ion-icon name="person-circle-outline" class="text-lg"></ion-icon>
+              </span>
+              <input id="nom-complet" type="text" placeholder="nom-complet"
+                class="w-full text-sm py-2 pl-10 pr-3 border border-gray-400 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 transition">
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="space-y-1">
+            <label for="email" class="text-sm font-medium">Email :</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-3 flex items-center text-gray-600">
+                <ion-icon name="mail-outline" class="text-lg"></ion-icon>
+              </span>
+              <input id="email" type="email" placeholder="email@mail.com"
+                class="w-full text-sm py-2 pl-10 pr-3 border border-gray-400 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 transition">
+            </div>
+          </div>
+
+          <!-- Mot de passe -->
+          <div class="space-y-1">
+            <label for="password" class="text-sm font-medium">Mot de passe :</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-3 flex items-center text-gray-600">
+                <ion-icon name="lock-closed-outline" class="text-lg"></ion-icon>
+              </span>
+              <input id="password" type="password" placeholder="mot de passe"
+                class="w-full text-sm py-2 pl-10 pr-3 border border-gray-400 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 transition">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- 2. Préférences (Checkbox) -->
+        <!-- ========================= -->
+        <div class="space-y-2">
+          <h4 class="text-lg font-semibold">Préférences :</h4>
+
+          <label class="flex items-center gap-2">
+            <input type="checkbox" name="newsletter">
+            <span>S'abonner à la newsletter</span>
+          </label>
+
+          <label class="flex items-center gap-2">
+            <input type="checkbox" name="sms">
+            <span>Recevoir des notifications SMS</span>
+          </label>
+        </div>
+
+        <!-- ========================= -->
+        <!-- 3. Radio : Sexe           -->
+        <!-- ========================= -->
+        <div class="space-y-2">
+          <h4 class="text-lg font-semibold">Sexe :</h4>
+
+          <div class="flex items-center gap-6">
+
+            <label class="flex items-center gap-1">
+              <input type="radio" name="genre" value="Masculin">
+              <span>Masculin</span>
+            </label>
+
+            <label class="flex items-center gap-1">
+              <input type="radio" name="genre" value="Feminin">
+              <span>Féminin</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- 4. Select Countries        -->
+        <!-- ========================= -->
+        <div class="space-y-1">
+          <label for="select" class="font-medium">Choisissez votre pays :</label>
+
+          <select id="select" name="pays"
+            class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <option value="">Sélectionnez</option>
+            <option value="CI">Côte d'Ivoire</option>
+            <option value="US">États-Unis</option>
+            <option value="FR">France</option>
+          </select>
+        </div>
+
+        <!-- ========================= -->
+        <!-- 5. Textarea                -->
+        <!-- ========================= -->
+        <div class="space-y-1">
+          <label for="commentaire" class="text-sm font-medium">Laisser un commentaire :</label>
+          <textarea id="commentaire" rows="4" maxlength="160"
+            class="w-full border border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-900 p-2 transition"></textarea>
+        </div>
+
+        <!-- ========================= -->
+        <!-- 6. Bouton Valider          -->
+        <!-- ========================= -->
+        <button
+          class="px-4 py-2 bg-gray-800 text-white font-bold hover:-translate-y-1 hover:bg-gray-900 transition duration-300 shadow-md hover:shadow-lg rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-gray-900">
+          VALIDER
+        </button>
+
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
