@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>IMAGE - GALLERY</title>
+</head>
+
+<body>
+  <section class="bg-cyan-50 py-5 px-4">
+
+    <div class="min-h-screen mx-auto bg-white rounded-3xl py-8 md:py-36 px-6 md:px-36 space-y-10 md:space-y-24">
+      <nav>
+        <ul class="flex flex-col justify-center items-center text-center gap-4 md:flex-row md:justify-end md:gap-8">
+          <li class="border-b-2 border-transparent hover:border-black transition duration-500 ease-in-out py-2"><a
+              href="#">Vector</a></li>
+          <li class="border-b-2 border-transparent hover:border-black transition duration-500 ease-in-out py-2"><a
+              href="#">Illustrations</a></li>
+          <li class="border-b-2 border-transparent hover:border-black transition duration-500 ease-in-out py-2"><a
+              href="#">Images</a></li>
+          <li class="border-b-2 border-transparent hover:border-black transition duration-500 ease-in-out py-2"><a
+              href="#">Icons</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="space-y-8 md:space-y-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+
+          <div class="w-full md:w-1/4 flex items-center border-b">
+            <input type="search" placeholder="Search..."
+              class="w-full border-gray-200 py-3 px-4 focus:outline-none placeholder:text-lg">
+            <ion-icon name="search-outline" class="text-gray-500 text-3xl"></ion-icon>
+          </div>
+
+          <button
+            class="w-full md:w-auto focus:outline-none px-12 py-3 bg-black shadow-2xl tracking-wider text-lg hover:bg-white hover:text-black hover:border hover:border-black text-white rounded-lg transition duration-500 ease-in-out">
+            <span class="">Upload</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
+          <div><img src="images/image1.jpg" alt="Gallery Image 1" class="w-full h-auto object-cover rounded-lg"></div>
+          <div><img src="images/image2.jpg" alt="Gallery Image 2" class="w-full h-auto object-cover rounded-lg"></div>
+          <div><img src="images/image3.jpg" alt="Gallery Image 3" class="w-full h-auto object-cover rounded-lg"></div>
+          <div><img src="images/image4.jpg" alt="Gallery Image 4" class="w-full h-auto object-cover rounded-lg"></div>
+          <div><img src="images/image5.jpg" alt="Gallery Image 5" class="w-full h-auto object-cover rounded-lg"></div>
+          <div><img src="images/image6.jpg" alt="Gallery Image 6" class="w-full h-auto object-cover rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
